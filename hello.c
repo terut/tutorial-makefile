@@ -1,6 +1,8 @@
 #include<stdio.h>
 
+void edajima(void);
+
 int main(int argc, char *argv[]) {
-    printf("Hello, World!!\n");
+    edajima();
     return 0;
 }
