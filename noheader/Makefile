@@ -5,10 +5,10 @@ CC = gcc
 all: hello raiden
 
 hello: $(objs)
-	$(CC) -o hello $(objs)
+	$(CC) -o $@ $(objs)
 
 hello.o: hello.c
-	$(CC) -c hello.c
+	$(CC) -c $<
 
 edajima.o: edajima.c
 	$(CC) -c edajima.c
