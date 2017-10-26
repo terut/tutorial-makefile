@@ -1,8 +1,10 @@
+objs = hello.o edajima.o
+
 .PHONY: all
 all: hello raiden
 
-hello: hello.o edajima.o
-	gcc -o hello hello.o edajima.o
+hello: $(objs)
+	gcc -o hello $(objs)
 
 hello.o: hello.c
 	gcc -c hello.c
@@ -18,4 +20,4 @@ raiden.o: raiden.c
 
 .PHONY: clean
 clean:
-	rm -rf hello hello.o edajima.o raiden raiden.o
+	rm -rf hello $(objs) raiden raiden.o
