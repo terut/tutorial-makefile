@@ -7,5 +7,6 @@ hello.o: hello.c
 edajima.o: edajima.c
 	gcc -c edajima.c
 
+.PHONY: clean
 clean:
 	rm -rf hello hello.o edajima.o
